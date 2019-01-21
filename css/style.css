@@ -16,6 +16,13 @@
 	border-radius: .25rem;
 	max-width: 100%;
 	height: auto;
+	margin-bottom: 3%;
+}
+
+#banner h1{
+	font-size: 3rem;
+	font-weight: 300;
+	line-height: 1.2;
 }
 
 .mute-link,.mute-link:hover{
@@ -29,7 +36,7 @@
 
 .center{
 	position: absolute;
-	top: 50%;
+	top: 40%;
 	left: 50%;
-	transform: translate(-50%,-50%);
+	transform: translate(-50%,-40%);
 }
