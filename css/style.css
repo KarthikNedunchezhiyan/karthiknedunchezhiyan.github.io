@@ -1,0 +1,35 @@
+#banner{
+	position: relative;
+	height: 100vh;
+	width: 100%;
+	background-image: url("http://www.sompaisoscatalans.cat/simage/180/1802620/code-hd-wallpapers.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	color: white;
+}
+
+#banner img{
+	padding: .25rem;
+	background-color: #fff;
+	border: 1px solid #ffc107;
+	border-radius: .25rem;
+	max-width: 100%;
+	height: auto;
+}
+
+.mute-link,.mute-link:hover{
+	text-decoration: none;
+	color: #007bff;
+}
+
+.separator{
+	color: #ffc107;
+}
+
+.center{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
