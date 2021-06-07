@@ -1,42 +1,108 @@
-#banner{
-	position: relative;
-	height: 100vh;
-	width: 100%;
-	background-image: url("http://www.sompaisoscatalans.cat/simage/180/1802620/code-hd-wallpapers.png");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-	color: white;
+a,
+a:focus,
+a:hover {
+  color: #fff;
 }
 
-#banner img{
-	padding: .25rem;
-	background-color: #fff;
-	border: 1px solid #ffc107;
-	border-radius: .25rem;
-	max-width: 100%;
-	height: auto;
-	margin-bottom: 3%;
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+  color: #333;
+  text-shadow: none;
+  background-color: #fff;
+  border: .05rem solid #fff;
 }
 
-#banner h1{
-	font-size: 3rem;
-	font-weight: 300;
-	line-height: 1.2;
+html,
+body {
+  height: 100%;
+  background-color: #333;
+  background-image: url('../images/background.jpeg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
-.mute-link,.mute-link:hover{
-	text-decoration: none;
-	color: #007bff;
+body {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  color: #fff;
+  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
 }
 
-.separator{
-	color: #ffc107;
+.cover-container {
+  max-width: 62em;
 }
 
-.center{
-	position: absolute;
-	top: 40%;
-	left: 50%;
-	transform: translate(-50%,-40%);
+.cover {
+  padding: 0 1.5rem;
+}
+.cover .btn-lg {
+  padding: .75rem 1.25rem;
+  font-weight: 700;
+}
+
+ul.social-network {
+	list-style: none;
+	display: inline;
+	margin-left:0 !important;
+	padding: 0;
+}
+ul.social-network li {
+	display: inline;
+	margin: 0 5px;
+}
+
+.social-network a.icoEnvelope:hover {
+	background-color:#d44638;
+}
+.social-network a.icoLinkedin:hover {
+	background-color:#007bb7;
+}
+.social-network a.icoGithub:hover {
+	background-color: #333;
+}
+
+a.socialIcon:hover, .socialHoverClass {
+	color:#44BCDD;
+}
+
+.social-circle li a {
+	display:inline-block;
+	position:relative;
+	margin:0 auto 0 auto;
+	-moz-border-radius:50%;
+	-webkit-border-radius:50%;
+	border-radius:50%;
+	text-align:center;
+	width: 50px;
+	height: 50px;
+	font-size:20px;
+	background-color: #D3D3D3;
+}
+.social-circle li i {
+	margin:0;
+	line-height:50px;
+	text-align: center;
+}
+
+.social-circle li a:hover i, .triggeredHover {
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	-ms-transition: all 0.2s;
+	transition: all 0.2s;
+}
+.social-circle i {
+	color: #fff;
+	-webkit-transition: all 0.8s;
+	-moz-transition: all 0.8s;
+	-o-transition: all 0.8s;
+	-ms-transition: all 0.8s;
+	transition: all 0.8s;
 }
