@@ -1,84 +1,331 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-	<!-- Required meta tags -->
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta name="author" content="Karthik Nedunchezhiyan">
-	<meta name="description"
-		content="A full stack developer || Loves to work with machine learning || algorithmist || I make things @zoho">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting</title>
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
 
+        body {
+            background-color: #f1c40f;
+            overflow: hidden;
+        }
 
-	<!-- Favicon impl -->
-	<link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
-	<link rel="manifest" href="site.webmanifest">
-	<link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5">
-	<meta name="msapplication-TileColor" content="#da532c">
-	<meta name="theme-color" content="#ffffff">
+        h1 {
+            position: absolute;
+            font-family: "Open Sans";
+            font-weight: 600;
+            font-size: 12px;
+            text-transform: uppercase;
+            left: 50%;
+            top: 58%;
+            margin-left: -20px;
+        }
 
+        .body {
+            position: absolute;
+            top: 50%;
+            margin-left: -50px;
+            left: 50%;
+            animation: speeder 0.4s linear infinite;
+        }
 
+        .body>span {
+            height: 5px;
+            width: 35px;
+            background: #000;
+            position: absolute;
+            top: -19px;
+            left: 60px;
+            border-radius: 2px 10px 1px 0;
+        }
 
-	<meta property="og:image" content="https://avatars2.githubusercontent.com/u/31442844?s=400&amp;v=4">
-	<meta property="og:image:height" content="402">
-	<meta property="og:image:width" content="768">
-	<meta property="og:description"
-		content="A full stack developer || Loves to work with machine learning || algorithmist || I make things @zoho">
-	<meta property="og:title" content="Karthik Nedunchezhiyan">
-	<meta property="og:url" content="https://karthiknedunchezhiyan.github.io/">
+        .base span {
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-top: 6px solid transparent;
+            border-right: 100px solid #000;
+            border-bottom: 6px solid transparent;
+        }
 
-	<meta name="twitter:card" content="summary">
-	<meta name="twitter:title" content="Karthik Nedunchezhiyan">
-	<meta name="twitter:description"
-		content="A full stack developer || Loves to work with machine learning || algorithmist || I make things @zoho">
-	<meta name="twitter:image" content="images/favicon/og-image.jpg" />
+        .base span:before {
+            content: "";
+            height: 22px;
+            width: 22px;
+            border-radius: 50%;
+            background: #000;
+            position: absolute;
+            right: -110px;
+            top: -16px;
+        }
 
-	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/style.css">
-	<title>Karthik Nedunchezhiyan</title>
+        .base span:after {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-top: 0 solid transparent;
+            border-right: 55px solid #000;
+            border-bottom: 16px solid transparent;
+            top: -16px;
+            right: -98px;
+        }
+
+        .face {
+            position: absolute;
+            height: 12px;
+            width: 20px;
+            background: #000;
+            border-radius: 20px 20px 0 0;
+            transform: rotate(-40deg);
+            right: -125px;
+            top: -15px;
+        }
+
+        .face:after {
+            content: "";
+            height: 12px;
+            width: 12px;
+            background: #000;
+            right: 4px;
+            top: 7px;
+            position: absolute;
+            transform: rotate(40deg);
+            transform-origin: 50% 50%;
+            border-radius: 0 0 0 2px;
+        }
+
+        .body>span>span:nth-child(1),
+        .body>span>span:nth-child(2),
+        .body>span>span:nth-child(3),
+        .body>span>span:nth-child(4) {
+            width: 30px;
+            height: 1px;
+            background: #000;
+            position: absolute;
+            animation: fazer1 0.2s linear infinite;
+        }
+
+        .body>span>span:nth-child(2) {
+            top: 3px;
+            animation: fazer2 0.4s linear infinite;
+        }
+
+        .body>span>span:nth-child(3) {
+            top: 1px;
+            animation: fazer3 0.4s linear infinite;
+            animation-delay: -1s;
+        }
+
+        .body>span>span:nth-child(4) {
+            top: 4px;
+            animation: fazer4 1s linear infinite;
+            animation-delay: -1s;
+        }
+
+        @keyframes fazer1 {
+            0% {
+                left: 0;
+            }
+
+            100% {
+                left: -80px;
+                opacity: 0;
+            }
+        }
+
+        @keyframes fazer2 {
+            0% {
+                left: 0;
+            }
+
+            100% {
+                left: -100px;
+                opacity: 0;
+            }
+        }
+
+        @keyframes fazer3 {
+            0% {
+                left: 0;
+            }
+
+            100% {
+                left: -50px;
+                opacity: 0;
+            }
+        }
+
+        @keyframes fazer4 {
+            0% {
+                left: 0;
+            }
+
+            100% {
+                left: -150px;
+                opacity: 0;
+            }
+        }
+
+        @keyframes speeder {
+            0% {
+                transform: translate(2px, 1px) rotate(0deg);
+            }
+
+            10% {
+                transform: translate(-1px, -3px) rotate(-1deg);
+            }
+
+            20% {
+                transform: translate(-2px, 0px) rotate(1deg);
+            }
+
+            30% {
+                transform: translate(1px, 2px) rotate(0deg);
+            }
+
+            40% {
+                transform: translate(1px, -1px) rotate(1deg);
+            }
+
+            50% {
+                transform: translate(-1px, 3px) rotate(-1deg);
+            }
+
+            60% {
+                transform: translate(-1px, 1px) rotate(0deg);
+            }
+
+            70% {
+                transform: translate(3px, 1px) rotate(-1deg);
+            }
+
+            80% {
+                transform: translate(-2px, -1px) rotate(1deg);
+            }
+
+            90% {
+                transform: translate(2px, 1px) rotate(0deg);
+            }
+
+            100% {
+                transform: translate(1px, -2px) rotate(-1deg);
+            }
+        }
+
+        .longfazers {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+
+        .longfazers span {
+            position: absolute;
+            height: 2px;
+            width: 20%;
+            background: #000;
+        }
+
+        .longfazers span:nth-child(1) {
+            top: 20%;
+            animation: lf 0.6s linear infinite;
+            animation-delay: -5s;
+        }
+
+        .longfazers span:nth-child(2) {
+            top: 40%;
+            animation: lf2 0.8s linear infinite;
+            animation-delay: -1s;
+        }
+
+        .longfazers span:nth-child(3) {
+            top: 60%;
+            animation: lf3 0.6s linear infinite;
+        }
+
+        .longfazers span:nth-child(4) {
+            top: 80%;
+            animation: lf4 0.5s linear infinite;
+            animation-delay: -3s;
+        }
+
+        @keyframes lf {
+            0% {
+                left: 200%;
+            }
+
+            100% {
+                left: -200%;
+                opacity: 0;
+            }
+        }
+
+        @keyframes lf2 {
+            0% {
+                left: 200%;
+            }
+
+            100% {
+                left: -200%;
+                opacity: 0;
+            }
+        }
+
+        @keyframes lf3 {
+            0% {
+                left: 200%;
+            }
+
+            100% {
+                left: -100%;
+                opacity: 0;
+            }
+        }
+
+        @keyframes lf4 {
+            0% {
+                left: 200%;
+            }
+
+            100% {
+                left: -100%;
+                opacity: 0;
+            }
+        }
+    </style>
 </head>
 
-<body class="text-center">
+<body>
+    <div class='body'>
+        <span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </span>
+        <div class='base'>
+            <span></span>
+            <div class='face'></div>
+        </div>
+    </div>
+    <div class='longfazers'>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <h1>REDIRECTING</h1>
 
-	<div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
-		<header class="mb-auto"></header>
-
-		<main role="main" class="inner cover">
-			<img src="images/myphoto.jpg" class="img-fluid img-thumbnail rounded-circle" alt="karthik's image"
-				style="width: 150px; height: 150px;">
-			<h1 class="cover-heading">Karthik Nedunchezhiyan</h1>
-			<p class="lead">A full stack developer || Rustacean 🦀 || Distributed systems || Cloud computing || Loves to
-				work with Virtualization & Containerization || Open source contributor || I make things @zoho</p>
-			<p class="lead">
-			<ul class="social-network social-circle">
-				<li><a href="mailto:karthik1705.n@gmail.com" class="icoEnvelope" title="Twitter"><i
-							class="fa fa-envelope"></i></a></li>
-				<li><a href="https://www.linkedin.com/in/karthiknedunchezhiyan/" class="icoLinkedin" title="Linkedin"><i
-							class="fa fa-linkedin"></i></a></li>
-				<li><a href="https://github.com/karthikNedunchezhiyan" class="icoGithub" title="Github"><i
-							class="fa fa-github"></i></a></li>
-			</ul>
-			</p>
-		</main>
-
-		<footer class="mt-auto"></footer>
-	</div>
-
-
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-		crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-		crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-		crossorigin="anonymous"></script>
+    <script>
+        // kasta pattu pannirukku, rendu second wait panni paakurathula onnum thappu illa.
+        setTimeout(() => {
+            window.location = "https://github.com/KarthikNedunchezhiyan";
+        }, 2000);
+    </script>
 </body>
 
 </html>
